@@ -1,0 +1,67 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/image_filter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bitmap filter" />
+
+    <Button
+        android:id="@+id/video_filter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Video filter" />
+
+    <Button
+        android:id="@+id/camera_filter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Camera filter" />
+
+    <Button
+        android:id="@+id/camera2_filter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Camera2 filter" />
+
+    <Button
+        android:id="@+id/view_filter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View filter" />
+
+    <Button
+        android:id="@+id/multi_input_filter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="multi_input_filter" />
+
+    <Button
+        android:id="@+id/split_filter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="split_filter" />
+
+    <Button
+        android:id="@+id/video_offscreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="video_offscreen" />
+
+    <Button
+        android:id="@+id/particle_render"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="particle_render" />
+
+    <Button
+        android:id="@+id/sticker_render"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="sticker_render" />
+</LinearLayout>

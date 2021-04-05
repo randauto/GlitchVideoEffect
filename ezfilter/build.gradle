@@ -1,0 +1,37 @@
+apply plugin: 'com.android.library'
+
+apply plugin: 'com.novoda.bintray-release'
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode rootProject.ext.sdkVersionCode
+        versionName rootProject.ext.sdkVersionName
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+}
+
+dependencies {
+    api fileTree(dir: 'libs', include: ['*.jar'])
+}
+
+publish {
+    userOrg = 'uestccokey' // bintray.com用户名
+    groupId = 'cn.ezandroid' // jcenter上的路径
+    artifactId = 'EZFilter' // 项目名称
+    publishVersion = rootProject.ext.sdkVersionName // 版本号
+    desc = '一款轻量级，易扩展的Android图像处理框架，支持拍照，视频，图片等添加滤镜，支持离屏渲染' // 描述
+    website = 'https://github.com/uestccokey/EZFilter'// 网站
+}
